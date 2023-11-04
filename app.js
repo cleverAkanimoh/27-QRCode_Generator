@@ -1,8 +1,7 @@
 const data = document.querySelector('#data');
 const qr = document.querySelector('#qr');
 
-data.onkeyup = e => {
-    if (e.code === 'Enter'){
+data.onchange = e => {
         qr.innerHTML= '';
         const href = data.value;
         // size of the image
@@ -17,5 +16,4 @@ data.onkeyup = e => {
             colorDark: '#040404',
             colorLight: '#e9eef4'
         })
-    }
 }
